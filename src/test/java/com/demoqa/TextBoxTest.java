@@ -47,10 +47,10 @@ public class TextBoxTest {
         $(byText("Music")).click();
         $("#uploadPicture").uploadFromClasspath("image.jpeg");
         $("#currentAddress").setValue(currentAddress);
-        $("#state").scrollTo().click();
-        $("#state").find(byText(state)).click();
+        $("#state").click();
+        $(byText(state)).click();
         $("#city").click();
-        $("#city").$(byText(city)).click();
+        $(byText(city)).click();
         $("#submit").click();
 
         $(".modal-content").shouldHave(

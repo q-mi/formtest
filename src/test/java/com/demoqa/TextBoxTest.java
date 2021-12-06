@@ -22,9 +22,9 @@ public class TextBoxTest {
         String lastName = "Malkovich";
         String userEmail = "Malkovich@mail.ru";
         String userNumber = "3332222332";
-        String month = "December";
-        String year = "1953";
-        String day = "9";
+        String monthBirth = "December";
+        String yearBirth = "1953";
+        String dayBirth = "9";
         String subjectsInput = "Maths";
         String hobby = "Music";
         String currentAddress = "Cambridge, Massachusetts, USA";
@@ -39,8 +39,8 @@ public class TextBoxTest {
         $("[for='gender-radio-1']").click();
         $("#userNumber").setValue(userNumber);
         $("#dateOfBirthInput").click();
-        $(".react-datepicker__month-select").selectOption(month);
-        $(".react-datepicker__year-select").selectOption(year);
+        $(".react-datepicker__month-select").selectOption(monthBirth);
+        $(".react-datepicker__year-select").selectOption(yearBirth);
         $(".react-datepicker__day--009").click();
         $("#submit").scrollTo();
         $("#subjectsInput").setValue(subjectsInput).pressEnter();
@@ -58,7 +58,7 @@ public class TextBoxTest {
                 text("Student Email"), text(userEmail),
                 text("Gender"), text("Male"),
                 text("Mobile"), text(userNumber),
-                text("Date of Birth"), text(day + " " + month + "," + year),
+                text("Date of Birth"), text(dayBirth + " " + monthBirth + "," + yearBirth),
                 text("Subjects"), text(subjectsInput),
                 text("Hobbies"), text(hobby),
                 text("Picture"), text("image.jpeg"),
